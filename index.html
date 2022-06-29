@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="pages/style.css">
+  <title>INCREDIBLE</title>
+</head>
+<body class="page">
+  <div class="page__column">
+    <header class="header">
+      <div class="header header__photo">
+        <h1 class="header__title">Welcome to the incredible</h1>
+        <ul class="table">
+          <li class="table__list">
+            <button type="button" class="table__button table__button_number_one" name="button-one" id="button-one">button text</button>
+          </li>
+          <li class="table__list table__list_back_color">
+            <button type="button" class="table__button table__button_number_two" name="button-two" id="button-two">button text</button>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="heading">
+        <h2 class="heading__title">Section Heading</h2>
+        <p class="heading__subtitle">This is some text inside of a div block.</p>
+        <ul class="table">
+          <li class="table__items">
+            <div class="heading__photo"><img class="heading__vector" src="/images/Vector1.png" alt="vector №1"></div>
+            <h3 class="heading__article">Style 1</h3>
+            <p class="heading__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              Suspendisse varius enim in eros elementum tristique.</p>
+            <a href="#" class="heading__link">Text link</a>
+          </li>
+          <li class="table__items">
+            <div class="heading__photo"><img class="heading__vector" src="/images/Vector2.png" alt="vector №2"></div>
+            <h3 class="heading__article">Style 2</h3>
+            <p class="heading__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              Suspendisse varius enim in eros elementum tristique.</p>
+            <a href="#" class="heading__link">Text link</a>
+          </li>
+          <li class="table__items">
+            <div class="heading__photo"><img class="heading__vector" src="/images/Vector3.png" alt="vector №3"></div>
+            <h3 class="heading__article">Style 3</h3>
+            <p class="heading__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              Suspendisse varius enim in eros elementum tristique.</p>
+            <a href="#" class="heading__link">Text link</a>
+          </li>
+          <li class="table__items">
+            <div class="heading__photo"><img class="heading__vector" src="/images/Vector4.png" alt="vector №4"></div>
+            <h3 class="heading__article">Style 4</h3>
+            <p class="heading__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              Suspendisse varius enim in eros elementum tristique.</p>
+            <a href="#" class="heading__link">Text link</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="action">
+        <p class="action__text">Here you can put some text</p>
+        <button type="button" class="action__button" name="action">Call To Action</button>
+      </section>
+
+      <section class="lightbox">
+        <h2 class="lightbox__title heading__title">Lightbox Section</h2>
+        <p class="lightbox__subtitle heading__subtitle">This is some text inside of a div block.</p>
+        <ul class="lightbox__table">
+          <li class="lightbox__item"><img class="lightbox__photo" src="/images/IMAGE (1).png" alt="foto 1"></li>
+          <li class="lightbox__item"><img class="lightbox__photo" src="/images/IMAGE (2).png" alt="foto 2"></li>
+          <li class="lightbox__item"><img class="lightbox__photo" src="/images/IMAGE (3).png" alt="foto 3"></li>
+          <li class="lightbox__item"><img class="lightbox__photo" src="/images/IMAGE (4).png" alt="foto 4"></li>
+          <li class="lightbox__item"><img class="lightbox__photo" src="/images/IMAGE (5).png" alt="foto 5"></li>
+          <li class="lightbox__item"><img class="lightbox__photo" src="/images/IMAGE (6).png" alt="foto 6"></li>
+          <li class="lightbox__item"><img class="lightbox__photo" src="/images/IMAGE (7).png" alt="foto 7"></li>
+          <li class="lightbox__item"><img class="lightbox__photo" src="/images/IMAGE (8).png" alt="foto 8"></li>
+        </ul>
+      </section>
+
+      <section class="contact">
+          <h2 class="contact__title heading__title">Contact forms</h2>
+          <p class="contact__subtitle heading__subtitle">This is some text inside of a div block.</p>
+        <form class="form contact__form">
+          <fieldset class="form__fieldset">
+            <input class="form__input form__input_type_name" type="text" name="name" placeholder="Name" required>
+            <span class="form__input-error input-name-error">111</span>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <input class="form__input form__input_type_email" type="email" name="email" placeholder="Email" required>
+            <span class="form__input-error input-email-error">222</span>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <textarea class="form__input form__input_type_message" type="text" name="message" placeholder="Message" required></textarea>
+            <span class="form__input-error input-message-error">333</span>
+          </fieldset>
+          <button class="button button_type_submit" name="submit">Submit</button>
+        </form>
+      </section>
+      <p class="copyright">Copyright Incredible. Made in Webflow.</p>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <nav class="footer__nav" >
+      <h2 class="footer__title">INCREDIBLE</h2>
+      <ul class="footer__items">
+        <li class="footer__item"><a class="footer__link" href="#">HOME</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">ABOUT</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">GALLERY</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <template class="foto">
+    <li class="lightbox__item">
+      <img class="lightbox__photo" src="/images/IMAGE (1).png" alt="foto 1">
+    </li>
+  </template>
+</body>
+</html>
