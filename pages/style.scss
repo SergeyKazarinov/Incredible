@@ -202,6 +202,7 @@ $color-red: #CF404D;
   background-color: #fafaf0;
 }
 
+
 .contact__form {
   @include flex();
   flex-wrap: wrap;
@@ -224,7 +225,7 @@ $color-red: #CF404D;
 }
 
 .form__input {
-  padding-left: 31px;
+  padding-left: 310px;
   color: #656565BD;
   font-size: 16px;
   line-height: 20px;
@@ -240,6 +241,10 @@ $color-red: #CF404D;
   padding-top: 21px;
   padding-right: 21px;
   resize: none;
+}
+
+.form__input_type_error {
+  border: 3px solid red;
 }
 
 .form__input-error {
