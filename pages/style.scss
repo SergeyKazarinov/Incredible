@@ -199,8 +199,9 @@ $color-red: #CF404D;
 .contact {
   padding-top: 58px;
   height: 500px;
-  background-color: #fafaf0;
+  background-color: #fafafa;
 }
+
 
 .contact__form {
   @include flex();
@@ -208,10 +209,11 @@ $color-red: #CF404D;
   margin: 0 auto;
   width: 680px;
   gap: 20px;
+  row-gap: 30px;
   box-sizing: border-box;
 }
 
-.form__fieldset{
+.form__fieldset {
   border: none;
   padding: 0;
   position: relative;
@@ -230,8 +232,13 @@ $color-red: #CF404D;
   line-height: 20px;
   width: 292px;
   height: 45px;
+  border-radius: 4px;
   border: none;
   color: black;
+
+  &:focus-visible {
+    outline: 1px solid 808080;
+  }
 }
 
 .form__input_type_message {
@@ -242,7 +249,12 @@ $color-red: #CF404D;
   resize: none;
 }
 
+.form__input_type_error {
+  border: 1px solid red;
+}
+
 .form__input-error {
+  display: none;
   position: absolute;
   top: 50px;
   left: 10px;
@@ -252,7 +264,12 @@ $color-red: #CF404D;
 }
 
 .input-message-error {
+  display: none;
   top: 140px;
+}
+
+.form__input-error_active {
+  display: block;
 }
 
 .button_type_submit {
@@ -263,6 +280,20 @@ $color-red: #CF404D;
   color: #fff;
   background-color: $color-red;
   border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform .5s;
+  &:active {
+    transform: scale(1.05);
+    transition: transform .5s;
+  }
+}
+
+.button_inactive {
+  border: 1px solid #808080;
+  background-color: #fafafa;
+  color: #808080;
+  cursor: default;
 }
 
 .copyright {
