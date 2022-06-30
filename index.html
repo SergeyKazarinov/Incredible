@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/normalize.css">
+  <!-- <link rel="stylesheet" href="styles/normalize.css"> -->
   <link rel="stylesheet" href="pages/style.css">
   <title>INCREDIBLE</title>
 </head>
@@ -83,20 +83,42 @@
       <section class="contact">
           <h2 class="contact__title heading__title">Contact forms</h2>
           <p class="contact__subtitle heading__subtitle">This is some text inside of a div block.</p>
-        <form class="form contact__form">
+        <form class="form contact__form" novalidate>
           <fieldset class="form__fieldset">
-            <input class="form__input form__input_type_name" type="text" name="name" placeholder="Name" required>
-            <span class="form__input-error input-name-error">111</span>
+            <input 
+              class="form__input form__input_type_name" 
+              type="text" id="input-name" 
+              name="name" 
+              placeholder="Name*"
+              minlength="2"
+              maxlength="20"
+              required
+            >
+            <span class="form__input-error input-name-error"></span>
           </fieldset>
           <fieldset class="form__fieldset">
-            <input class="form__input form__input_type_email form__input_type_error" type="email" name="email" placeholder="Email" required>
-            <span class="form__input-error input-email-error">222</span>
+            <input 
+              class="form__input form__input_type_email"
+              type="email" 
+              id="input-email" 
+              name="email" 
+              placeholder="Email*" 
+              required
+            >
+            <span class="form__input-error input-email-error"></span>
           </fieldset>
           <fieldset class="form__fieldset">
-            <textarea class="form__input form__input_type_message" type="text" name="message" placeholder="Message" required></textarea>
-            <span class="form__input-error input-message-error">333</span>
+            <textarea 
+              class="form__input form__input_type_message" 
+              type="text" id="input-message" 
+              name="message" 
+              placeholder="Message*" 
+              minlength="2"
+              required>
+            </textarea>
+            <span class="form__input-error form__input-error_active input-message-error">* - поля, обязательные для ввода</span>
           </fieldset>
-          <button class="button button_type_submit" name="submit">Submit</button>
+          <button class="button button_type_submit button_inactive" name="submit">Submit</button>
         </form>
       </section>
       <p class="copyright">Copyright Incredible. Made in Webflow.</p>
@@ -121,6 +143,6 @@
     </li>
   </template>
 
-  <!-- <script type="module" src="./pages/index.js"></script> -->
+  <script type="module" src="./pages/index.js"></script>
 </body>
 </html>
